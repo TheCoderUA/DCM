@@ -1,0 +1,20 @@
+{
+  "name": "dcm",
+  "version": "0.0.1",
+  "description": "Data Control Manager - a custom data-storing directory system which is the result of playing with TS. Some time it maybe will be useful tool for somebody for some purpose. But now it's just a playground to have fun with TypeScript:)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "tst"
+  },
+  "keywords": [
+    "TypeScript",
+    "ES6",
+    "JavaScript"
+  ],
+  "author": "Amir Daneshmand",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
