@@ -10,6 +10,9 @@ interface DirectoryInterface {
   addContent: Function;
   removeContent: Function;
   renameContent: Function;
+
+  /* Getters / Setters */
+  logContents: Function;
 }
 
 export default class Directory implements DirectoryInterface {
@@ -56,6 +59,20 @@ export default class Directory implements DirectoryInterface {
       return true;
     } else {
       return false;
+    }
+  };
+
+  /* Getters / Setters implementation */
+
+  public logContents: Function = (): void => {
+    // If directory is empty - log it and return:
+    if (this.contents.size === 0) {
+      console.log("Empty Directory");
+      return;
+    }
+
+    for (const element of this.contents.values()) {
+      console.log(element);
     }
   };
 }
